@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const image = () => {
+export const Image = (props) => {
   return (
-    <div>image</div>
+    <div className="ImageWrapper">
+    <img className="DogImage" src={props.RandomImage}/>
+    </div>
   )
 }
