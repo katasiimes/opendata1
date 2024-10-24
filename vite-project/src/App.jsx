@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import './App.css'
-import Page from './pages/Page.jsx'
+import React from 'react';
+import Page from './pages/Page.jsx';
 
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div>
       <Page/> 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
