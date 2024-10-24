@@ -1,0 +1,41 @@
+.DogImage {
+    max-width: 80%;
+    margin-top: 100px;
+
+}
+
+.color-picker-menu {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+
+  .color-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+
+  .color-blue {
+    background-color: lightblue;
+  }
+  
+  .color-green {
+    background-color: lightgreen;
+  }
+  
+  .color-red {
+    background-color: lightcoral;
+  }
+  
+  .color-yellow {
+    background-color: gold;
+  }
+  
