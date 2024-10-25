@@ -5,23 +5,38 @@ import OrderInfo from '../components/OrderInfo';
 
 
 const Page = () => {
-  const products = [
-    { name: 'Product 1', price: 10.99 },
-    { name: 'Product 2', price: 20.49 },
-    { name: 'Product 3', price: 5.99 },
-  ];
+  const items = ['Item 1', 'Item 2']
+  const prices = [245.0, 350.0]
 
-  const [order, setOrder] = useState(null);
+  const [itemIndex, setItemIndex] = useState(0);
 
-  const handleOrder = (newOrder) => {
-    setOrder(newOrder);
-  };
+  const [count, setCount] = useState(1)
+
+  const handleItemChange = (index) => {
+    setItemIndex(index)
+  }
+
+
+  const handleCountChange = (newCount) => {
+    setCount(newCount)
+  }
 
   return (
-    <div className="App">
-      <Header image={productImage} title="My Product Page" />
-      <ProductForm products={products} onOrder={handleOrder} />
-      <OrderInfo order={order} />
+    <div className="main-ui">
+      <Header title="Product Page" />
+
+      <ProductForm
+        item={items}
+        prices={prices}
+        onItemChange={handleItemChange}
+        onCountChange={handleCountChange}
+      />
+
+      <OrderInfo
+        itemName={items[itemIndex]}
+        price={prices[itemIndex]}
+        count={count}
+      />
     </div>
   );
 };
