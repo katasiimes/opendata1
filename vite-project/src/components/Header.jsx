@@ -3,15 +3,16 @@ import './css/Header.css'
 import icon from './images/icon.png'
 
 
-const Header = ({ image, title }) => {
+const Header = ({ title }) => {
   return (
     <div className="Header">
-        <img src={icon} alt = 'r' className= "Header-image" />
+      <div className="header-row">
+        <img src={icon} alt='header icon' className="header-icon" />
         <h1 className="header-title">{title}</h1>
-        <h2>Select product</h2>
-
+      </div>
+      <h2>Select product</h2>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
