@@ -1,20 +1,20 @@
 import React from 'react'
 import './css/OrderInfo.css'
 
-const OrderInfo = ({ productName, price, qty }) => {
-    const totalPrice = price * qty
+const OrderInfo = (props) => {
+    const totalPrice = props.price * props.qty
 
     return (
         <div className="order-info">
             <div className="column">
                 <p>Product</p>
                 <div className="divider"></div>
-                <p>{productName}</p>
+                <p>{props.productName}</p>
             </div>
             <div className="column">
                 <p>Quantity</p>
                 <div className="divider"></div>
-                <p>{qty}</p>
+                <p>{props.qty}</p>
             </div>
             <div className="column">
                 <p>Total</p>

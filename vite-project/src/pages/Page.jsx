@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from '../components/Header.jsx'
 import ProductForm from '../components/ProductForm'
 import OrderInfo from '../components/OrderInfo'
+import icon from '../components/images/icon.png'
 
 const Page = () => {
   const products = ['Product 1 (245€)', 'Product 2 (350€)']
@@ -20,7 +21,7 @@ const Page = () => {
 
   return (
     <div className="main-ui">
-      <Header title="Welcome to product Page!" />
+      <Header title="Welcome to product Page!" icon={icon} />
 
       <ProductForm
         products={products}
