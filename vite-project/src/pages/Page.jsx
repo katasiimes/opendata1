@@ -4,7 +4,7 @@ import ProductForm from '../components/ProductForm'
 import OrderInfo from '../components/OrderInfo'
 
 const Page = () => {
-    const products = ['Product 1', 'Product 2']
+    const products = ['Product 1 (245€)', 'Product 2 (350€)']
     const prices = [245, 350]
 
     const [selectedProduct, setSelectedProduct] = useState(0);
@@ -20,7 +20,7 @@ const Page = () => {
   
     return (
       <div className="main-ui">
-        <Header title="Product Page" />
+        <Header title="Welcome to product Page!" />
   
         <ProductForm
           products={products}

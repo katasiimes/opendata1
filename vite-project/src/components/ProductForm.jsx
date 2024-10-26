@@ -36,6 +36,7 @@ const ProductForm = ({ products, onProductChange, onQtyChange }) => {
       </select>
 
       <div className="qty-controls">
+        <label>Quantity: </label>
         <button onClick={decreaseQty}>-</button>
         <span>{qty}</span>
         <button onClick={increaseQty}>+</button>
