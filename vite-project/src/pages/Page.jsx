@@ -5,7 +5,7 @@ import OrderInfo from '../components/OrderInfo'
 
 const Page = () => {
     const products = ['Product 1', 'Product 2']
-    const prices = [245.0, 350.0]
+    const prices = [245, 350]
 
     const [selectedProduct, setSelectedProduct] = useState(0);
     const [qty, setQty] = useState(1)
