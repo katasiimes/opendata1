@@ -41,6 +41,9 @@ const ProductForm = ({ products, onProductChange, onQtyChange }) => {
         <span>{qty}</span>
         <button onClick={increaseQty}>+</button>
       </div>
+
+      <h2 className="order-title">Order Info</h2>
+      
     </div>
   )
 }

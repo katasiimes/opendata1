@@ -3,7 +3,7 @@ import './css/OrderInfo.css'
 
 const OrderInfo = ({ productName, price, qty }) => {
   const totalPrice = price * qty;
-
+  
   return (
     <div className="order-info">
       <div className="column">

@@ -1,12 +1,14 @@
-import React from 'react';
-import './css/Header.css';
+import React from 'react'
+import './css/Header.css'
+import icon from './images/icon.png'
+
 
 const Header = ({ image, title }) => {
   return (
     <div className="Header">
-        <img src={image} alt = 'r' className= "Header-image" />
+        <img src={icon} alt = 'r' className= "Header-image" />
         <h1 className="header-title">{title}</h1>
-        <p>Select product</p>
+        <h2>Select product</h2>
 
     </div>
   );
